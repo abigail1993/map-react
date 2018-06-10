@@ -9,27 +9,14 @@ background-repeat: no-repeat;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.tabla {
+  background-color: skyblue;
   color: white;
-}
+  border: solid 3px plum;
+  margin: 20px;
 
-.App-title {
-  font-size: 1.5em;
 }
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+ .s-m {
+   margin: 0px;
+   padding: 0px;
+ }

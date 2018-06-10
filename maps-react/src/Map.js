@@ -11,32 +11,27 @@ class Map extends Component {
         super(props)
         this.state ={
             agregado:[],
-            data: data
+            data: data //con esto se ingresa a el json externo
         }
 
- // console.log(this.state.data.data[1].Coordinates.lat) //  CON ESTO SE ENTRA A LAS COORDENADAS
+ //console.log(this.state.data.data[1].Coordinates) //  CON ESTO SE ENTRA A LAS COORDENADAS
 
-    }
+    }   
 
+    render(){      
     
 
-    render(){
-
-        
-       // const markers= data.data[3].Coordinates tengo que crear la funcion que recorra
-       //lo data y que devuelva las coordenadas para que esas se agregen a un marker y las pinte en el mapa
+       //  tengo que crear la funcion que recorra lo data y que devuelva las coordenadas
+       // para que esas se agregen a un marker y las pinte en el mapa pero no se en donde
         
         return(
-                
-
-            
             <GoogleMap
                defaultZoom= {this.props.zoom}
                defaultCenter={this.props.center}>
-               
-              <Marker  position= {{lat: 19.4203024, lng:  -99.1631142/*aqui deberian de ir las coordenadas diferentes*/}}/>
+               <Marker position={{lat: 19.4203024, lng:  -99.1631142}}/*aqui deberiacambiar las cordenadas para que se pinten en el map*/ /> 
 
             </GoogleMap>
+            
         )
     }
 }
