@@ -1,4 +1,5 @@
-##Generation Take-Home Coding Challenge
+## Generation Take-Home Coding Challenge
+
 This is a take-home coding challenge used to help evaluate candidates interested in joining the team at Generation. The goal is for candidates to complete the coding challenge before the in-person interview so that we can discuss the solution together. In cases where this is not possible, we may discuss the solution together over a followup phone call.
 
 What should you expect?
@@ -29,6 +30,6 @@ Your changes will appear without reloading the browser.
 
 What do we look for?
 
--Correctness: does the application do what was asked (e.g., all the user stories are complete)? If there is anything missing, does the README explain why it is missing?
--Code quality: is the code simple, easy to understand, and maintainable? Are there any code smells or other red flags? Is the coding style consistent with the language's guidelines? Is it consistent throughout the codebase?
--UX: Is the web interface understandable and pleasing to use? Is it responsive to various screen sizes, and fast to load?
+- Correctness: does the application do what was asked (e.g., all the user stories are complete)? If there is anything missing, does the README explain why it is missing?
+- Code quality: is the code simple, easy to understand, and maintainable? Are there any code smells or other red flags? Is the coding style consistent with the language's guidelines? Is it consistent throughout the codebase?
+- UX: Is the web interface understandable and pleasing to use? Is it responsive to various screen sizes, and fast to load?
