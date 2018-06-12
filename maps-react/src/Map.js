@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-//import { compose, withProps, createEventHandlerWithConfig } from "recompose";
-import { /*withScriptjs, withGoogle,*/InfoWindow,  GoogleMap, Marker, withGoogleMap } from "react-google-maps";
+import {   GoogleMap, Marker, withGoogleMap } from "react-google-maps";
 import data from "./datos";
 
 
@@ -12,13 +11,10 @@ class Map extends Component {
             agregado:[],
             data: data //con esto se ingresa a el json externo
         }
-                     //console.log(this.state.data.data[1].Coordinates) //  CON ESTO SE ENTRA A LAS COORDENADAS
     };
-
     MarkerClick(event){
         console.log('MarkerClick: '+ data.name)
     }
-
 
     render(){   
         const markers=this.props.markers.map((data,index) =>{
@@ -27,30 +23,22 @@ class Map extends Component {
                     lat: data.Coordinates.lat,
                     lng: data.Coordinates.lng,
                 }
-            }
-           
-            return <Marker key={index} {...marker} onClick={this.MarkerClick}//esto es un pequeñoavance a algo */
-             />
+            } 
+            return <Marker key={index} {...marker} onClick={this.MarkerClick}/>
+            //con el evento onClick se trato de dar
+            //la información para que al hacerle click al marcador se pudiera agregar a la lista
+            //solo que no pude hacer que se jalara la información de cada marador.
         })
 
-       //  tengo que crear la funcion que recorra lo data y que devuelva las coordenadas
-       // para que esas se agregen a un marker y las pinte en el mapa pero no se en donde
-        return(
-            
+        return(  
             <GoogleMap
                defaultZoom= {this.props.zoom}
                defaultCenter={this.props.center}
                options={{streetViewControl : false, myTypeControl:false}}>
                { markers }
-
-               
             </GoogleMap>
-           
-            
         )
     }
 }
 
 export default  withGoogleMap(Map);
-
-
